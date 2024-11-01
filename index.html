@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AluraGeek</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <!-- <h1><span class="hearts">❤️❤️❤️</span> AluraGeek</h1> -->
+      <img src="./icons/hearts.svg" />
+    </header>
+
+    <main class="main-content">
+      <section class="product-list">
+        <h2>MEUS PRODUTOS:</h2>
+        <div class="products">
+          <!-- Repetição de produtos, apenas um exemplo para estrutura -->
+          <div class="product">
+            <img src="./img/stormtrooper.svg" alt="Stormtrooper" />
+            <h3>Stormtrooper</h3>
+            <p class="price">$ 60,00</p>
+            <button class="delete-btn">
+              <img src="./icons/trashcan.svg" />
+            </button>
+          </div>
+          <div class="product">
+            <img src="./img/gameboy.svg" alt="Game Boy Classic" />
+            <h3>Game Boy Classic</h3>
+            <p class="price">$ 60,00</p>
+            <button class="delete-btn">
+              <img src="./icons/trashcan.svg" />
+            </button>
+          </div>
+          <div class="product">
+            <img src="./img/stormtrooper.svg" alt="Stormtrooper" />
+            <h3>Stormtrooper</h3>
+            <p class="price">$ 60,00</p>
+            <button class="delete-btn">
+              <img src="./icons/trashcan.svg" />
+            </button>
+          </div>
+          <div class="product">
+            <img src="./img/gameboy.svg" alt="Game Boy Classic" />
+            <h3>Game Boy Classic</h3>
+            <p class="price">$ 60,00</p>
+            <button class="delete-btn">
+              <img src="./icons/trashcan.svg" />
+            </button>
+          </div>
+
+          <!-- Continue a lista de produtos conforme necessário -->
+        </div>
+      </section>
+
+      <section class="product-form">
+        <h2>ADICIONAR PRODUTO:</h2>
+        <form action="#" method="post">
+          <input type="text" name="name" placeholder="nome..." required />
+          <input type="text" name="price" placeholder="valor..." required />
+          <input type="text" name="image" placeholder="imagem..." required />
+          <div class="form-buttons">
+            <button type="submit" class="save-btn">Salvar</button>
+            <button type="reset" class="clear-btn">Limpar</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <img src="icons/hearts.svg" />
+      <p>
+        DESENVOLVIDO POR
+        <a href="https://github.com/Rafaelse6">RAFAEL SANTOS</a>
+      </p>
+      <p>ALURA LATAM - 2024</p>
+    </footer>
+    <script src="./script.js" defer></script>
+  </body>
+</html>
