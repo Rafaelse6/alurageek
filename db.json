@@ -19,13 +19,19 @@
       "image": "https://img.freepik.com/fotos-gratis/vista-da-configuracao-do-teclado-para-jogos-de-neon-iluminado-e-oculos-3d_23-2149529416.jpg?t=st=1730505599~exp=1730509199~hmac=26d728a775c6f6491abcd8e4ac15aa817e7799dbceda23398b4021a31d4c6b44&w=740"
     },
     {
-      "id": "7c8f",
-      "name": "Teste",
+      "id": "32ab",
+      "name": "postgres-local",
       "price": "$100,00",
       "image": "https://images.pexels.com/photos/17708242/pexels-photo-17708242/free-photo-of-pizza-restaurante-mulher-queijo.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
     {
-      "id": "def4",
+      "id": "0bd5",
+      "name": "postgres-local",
+      "price": "$100,00",
+      "image": "https://images.pexels.com/photos/17708242/pexels-photo-17708242/free-photo-of-pizza-restaurante-mulher-queijo.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "id": "d3d7",
       "name": "Breakfast",
       "price": "$100,00",
       "image": "https://images.pexels.com/photos/17708242/pexels-photo-17708242/free-photo-of-pizza-restaurante-mulher-queijo.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"

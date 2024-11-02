@@ -12,7 +12,10 @@ body {
     font-family: Arial, sans-serif;
     background-color: #fff;
     color: #000;
-    min-height: 100vh;
+    display: flex;
+    flex-direction: column; 
+    min-height: 100vh; 
+    margin: 0; 
 }
 
 /* HEADER */
@@ -30,16 +33,17 @@ body {
     justify-content: space-around;
     padding: 40px 60px;
     flex: 1;
+    
 }
 
 /* LISTA DE PRODUTOS */
 .product-list {
     width: 50%;
-    max-height: 550px; /* Ajuste conforme necessário */
-    overflow-y: auto; /* Adiciona scroll vertical */
-    border: 2px solid #5300C8; /* Opcional: borda para visualizar o contêiner */
-    border-radius: 8px; /* Opcional: arredondar os cantos */
-    padding: 10px; /* Opcional: espaçamento interno */
+    max-height: 550px;
+    overflow-y: auto;
+    border: 2px solid #5300C8;
+    border-radius: 8px;
+    padding: 10px;
 }
 
 .product-list h2,
@@ -195,14 +199,13 @@ p {
 
 .footer {
     width: 100%;
-    position: fixed;
+    position: absolute;
     background-color: #5300C8;
     color: #fff;
     text-align: center;
-    padding: 64px;
+    padding: 20px;
     margin-top: 20px;
-    padding: 20px; /* Use padding em vez de height */
-    bottom: 0;
+    height: auto;
 }
 
 .footer p {
@@ -220,4 +223,39 @@ p {
     text-decoration: none;
     color: #FFF;
     margin-left: 10px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        overflow-x: hidden;
+        width: 100%;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+}
+
+.products {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.product-list {
+    width: 100%;
+}
+
+.product-form {
+    width: 100%;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.footer {
+    width: 100%;
+    padding: 10px;
+    height: auto;
+    margin-top: 5px;
+    position: relative;
 }
