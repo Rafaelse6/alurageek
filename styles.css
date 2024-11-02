@@ -12,6 +12,7 @@ body {
     font-family: Arial, sans-serif;
     background-color: #fff;
     color: #000;
+    min-height: 100vh;
 }
 
 /* HEADER */
@@ -28,11 +29,17 @@ body {
     display: flex;
     justify-content: space-around;
     padding: 40px 60px;
+    flex: 1;
 }
 
 /* LISTA DE PRODUTOS */
 .product-list {
     width: 50%;
+    max-height: 550px; /* Ajuste conforme necessário */
+    overflow-y: auto; /* Adiciona scroll vertical */
+    border: 2px solid #5300C8; /* Opcional: borda para visualizar o contêiner */
+    border-radius: 8px; /* Opcional: arredondar os cantos */
+    padding: 10px; /* Opcional: espaçamento interno */
 }
 
 .product-list h2,
@@ -60,23 +67,32 @@ body {
     text-align: center;
     padding: 10px;
     position: relative;
-    border: 2px solid #000;
     width: 200px;
     height: 260px;
 }
 
 .product img {
+    width: auto;
+    height: auto;
+    max-width: 175px;
+    max-height: 175px;
+    object-fit: contain;
     border-radius: 5px;
+    border: 2px solid #000;
 }
 
 .product h3 {
+    font-family: 'IBM Plex Mono', sans-serif;
+    font-weight: bold;
     font-size: 16px;
     margin: 10px 0;
 }
 
 .product .price {
+    font-family: 'IBM Plex Mono', sans-serif;
     font-size: 14px;
     color: #FFF;
+    font-weight: lighter;
 }
 
 .product h3,
@@ -91,14 +107,15 @@ p {
     background: none;
     border: none;
     position: absolute;
-    bottom: 10px;
+    bottom: 7px;
     right: 10px;
     cursor: pointer;
     font-size: 18px;
+    width: 15%;
 }
 
-.delete-btn {
-    width: 15%;
+.delete-btn img {
+    border: none;
 }
 
 /* Formulário de produtos */
@@ -178,12 +195,13 @@ p {
 
 .footer {
     width: 100%;
+    position: fixed;
     background-color: #5300C8;
     color: #fff;
     text-align: center;
     padding: 64px;
     margin-top: 20px;
-    height: 232px;
+    padding: 20px; /* Use padding em vez de height */
     bottom: 0;
 }
 

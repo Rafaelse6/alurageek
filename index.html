@@ -9,7 +9,6 @@
 
   <body>
     <header class="header">
-      <!-- <h1><span class="hearts">❤️❤️❤️</span> AluraGeek</h1> -->
       <img src="./icons/hearts.svg" />
     </header>
 
@@ -17,50 +16,34 @@
       <section class="product-list">
         <h2>MEUS PRODUTOS:</h2>
         <div class="products">
-          <!-- Repetição de produtos, apenas um exemplo para estrutura -->
-          <div class="product">
-            <img src="./img/stormtrooper.svg" alt="Stormtrooper" />
-            <h3>Stormtrooper</h3>
-            <p class="price">$ 60,00</p>
-            <button class="delete-btn">
-              <img src="./icons/trashcan.svg" />
-            </button>
           </div>
-          <div class="product">
-            <img src="./img/gameboy.svg" alt="Game Boy Classic" />
-            <h3>Game Boy Classic</h3>
-            <p class="price">$ 60,00</p>
-            <button class="delete-btn">
-              <img src="./icons/trashcan.svg" />
-            </button>
-          </div>
-          <div class="product">
-            <img src="./img/stormtrooper.svg" alt="Stormtrooper" />
-            <h3>Stormtrooper</h3>
-            <p class="price">$ 60,00</p>
-            <button class="delete-btn">
-              <img src="./icons/trashcan.svg" />
-            </button>
-          </div>
-          <div class="product">
-            <img src="./img/gameboy.svg" alt="Game Boy Classic" />
-            <h3>Game Boy Classic</h3>
-            <p class="price">$ 60,00</p>
-            <button class="delete-btn">
-              <img src="./icons/trashcan.svg" />
-            </button>
-          </div>
-
-          <!-- Continue a lista de produtos conforme necessário -->
         </div>
       </section>
 
       <section class="product-form">
         <h2>ADICIONAR PRODUTO:</h2>
-        <form action="#" method="post">
-          <input type="text" name="name" placeholder="nome..." required />
-          <input type="text" name="price" placeholder="valor..." required />
-          <input type="text" name="image" placeholder="imagem..." required />
+        <form action="#" method="post" data-formulario>
+          <input
+            type="text"
+            name="name"
+            placeholder="nome..."
+            required
+            data-nome
+          />
+          <input
+            type="text"
+            name="price"
+            placeholder="valor..."
+            required
+            data-valor
+          />
+          <input
+            type="text"
+            name="image"
+            placeholder="imagem..."
+            required
+            data-imagem
+          />
           <div class="form-buttons">
             <button type="submit" class="save-btn">Salvar</button>
             <button type="reset" class="clear-btn">Limpar</button>
@@ -77,6 +60,7 @@
       </p>
       <p>ALURA LATAM - 2024</p>
     </footer>
-    <script src="./script.js" defer></script>
+    <script src="./js/mostrarProduto.js" type="module"></script>
+    <script src="./js/criarProduto.js" type="module"></script>
   </body>
 </html>
