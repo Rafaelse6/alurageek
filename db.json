@@ -23,6 +23,12 @@
       "name": "Teste",
       "price": "$100,00",
       "image": "https://images.pexels.com/photos/17708242/pexels-photo-17708242/free-photo-of-pizza-restaurante-mulher-queijo.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "id": "def4",
+      "name": "Breakfast",
+      "price": "$100,00",
+      "image": "https://images.pexels.com/photos/17708242/pexels-photo-17708242/free-photo-of-pizza-restaurante-mulher-queijo.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     }
   ]
 }

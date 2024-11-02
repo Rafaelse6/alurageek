@@ -1,3 +1,5 @@
+import deletarProduto from "./deletarProduto.js";
+
 export default function constroiProduto(titulo, preco, imagem) {
   const productElement = document.createElement("div");
   productElement.classList.add("product");
@@ -9,5 +11,9 @@ export default function constroiProduto(titulo, preco, imagem) {
   <p class="price">${preco}</p>
   <button class="delete-btn"><img src="./icons/trashcan.svg" /></button>
 `;
+
+  const deleteButton = productElement.querySelector(".delete-btn");
+  deleteButton.addEventListener("click", deletarProduto);
+
   return productElement;
 }
